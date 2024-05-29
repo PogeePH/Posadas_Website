@@ -1,0 +1,135 @@
+
+body{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    background-color: #C1C07E;
+}
+header
+{
+    text-align: center;
+}
+.navbar #nav{
+    list-style-type: none;
+    background-color: hsl(59, 35%, 63%);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: hsl(58, 16%, 59%);
+}
+.navbar li{
+    float: left;
+}
+
+
+
+/* section and aside */
+
+
+    main {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+      }
+      
+      article {
+        flex: 2;
+        background-color: #C1C07E;
+        padding: 10px;
+      }
+      
+      aside {
+        flex: 1;
+        background-color: #C1C07Ev;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .advert{
+        justify-content: center;
+        text-align: center;
+      }
+
+
+    /*footer*/
+    
+    .footerBottom{
+        background-color: #000;
+        padding: 20px;
+        text-align: center;
+    }
+    .footerBottom p{
+        color: white;
+    }
+
+    .name{
+        text-transform: initial;
+        letter-spacing: 0px;
+        font-weight: 40;
+        margin: 0px;
+    }
+    
+    @media (max-width: 700px){
+        .footerNav ul{
+            flex-direction: column;
+        } 
+        .footerNav ul li{
+            width:100%;
+            text-align: center;
+            margin: 10px;
+        }
+        .socialIcons a{
+            padding: 8px;
+            margin: 4px;
+        }
+    }
+
+    /* slider */
+    
+    .slider{
+        position: relative;
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+    }
+    .slider img{
+        width: 80%;
+        display: none;
+    }
+    img.displaySlide{
+        display: block;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    .slider button{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 2rem;
+        padding: 10px 15px;
+        background-color: hsla(0, 0%, 0%, 0.5);
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    .prev{
+        left: 0;
+    }
+    .next{
+        right: 0;
+    }
+    @keyframes fade {
+        from {opacity: .5}
+        to {opacity: 1}
+    }
